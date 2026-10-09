@@ -1,0 +1,3 @@
+Performing Streamed Install
+adb: failed to install /home/sean/firstproject/VSeeBox_Files/system/app/Deviceheartbeat/Deviceheartbeat.apk: Failure [INSTALL_FAILED_NO_MATCHING_ABIS: Failed to extract native libraries, res=-113]
+
