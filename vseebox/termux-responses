@@ -1,0 +1,66 @@
+processor       : 2
+BogoMIPS        : 0.00
+Features        : fp asimd evtstrm crc32 cpuid
+CPU implementer : 0x41
+CPU architecture: 8
+CPU variant     : 0x0
+CPU part        : 0xd03
+CPU revision    : 4
+
+processor       : 3
+BogoMIPS        : 0.00
+Features        : fp asimd evtstrm crc32 cpuid
+CPU implementer : 0x41
+CPU architecture: 8
+CPU variant     : 0x0
+CPU part        : 0xd03
+CPU revision    : 4
+
+Hardware        : BCM2835
+Revision        : c03112
+Serial          : [not fully visible]
+Model           : Raspberry Pi 4 Model B Rev 1.2
+
+$ cat /proc/cpuinfo | grep -iE "hardware|model|processor" | head -10
+processor       : 0
+model name      : ARMv8 Processor rev 4 (v8l)
+processor       : 1
+model name      : ARMv8 Processor rev 4 (v8l)
+processor       : 2
+model name      : ARMv8 Processor rev 4 (v8l)
+processor       : 3
+model name      : ARMv8 Processor rev 4 (v8l)
+
+$ ls -la /dev/block/by-name 2>/dev/null | head -20
+ls: cannot access '/dev/block/by-name': Permission denied
+
+$ find /dev/block/bootdevice/by-name/ 2>/dev/null | head
+$ find /dev/block/platform -name by-name 2>/dev/null | head
+$ dd if=/dev/block/bootdevice/by-name/boot of=/sdcard/boot_test.img bs=1M count=8 2>/dev/null
+Cannot read boot via this path
+
+$ ls -la /cache/recovery 2>/dev/null | head -5
+$ ls -la /metadata/ota 2>/dev/null
+$ find / -name "*aml*" -type f 2>/dev/null | head -10
+$ find / -name "*qti*" -type f 2>/dev/null | head -10
+$ pm list packages | grep -iE "mstar|amlogic|realtek|mediatek|box|tools|qstar" | head -10
+
+service: No service specified
+$ service check | grep -i device
+No service specified
+
+$ ls -R /sys/system/vendor | head -10
+/dev/block/by-name/odm_ext_b
+/dev/block/by-name/odm_ext_a
+/dev/block/by-name/odm
+/dev/block/by-name/param
+/dev/block/by-name/vendor
+/dev/block/by-name/vendor_dlkm
+859.1 shortname=mixed, errors=remount-ro 0 0
+/dev/block/dm-19 /vendor/erofs ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround 0 0
+/dev/block/dm-18 /system_dlkm erofs ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround 0 0
+/dev/block/dm-19 /vendor erofs ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround 0 0
+/dev/block/dm-17 /vendor/erofs ro,seclabel,relatime,user_xattr,acl,cache_strategy=readaround 0 0
+
+$ grep -r "su" /data/app 2>/dev/null | head -10
+$ pm list packages | grep -E "install.*update|system.*update|com.android.*setup" | head -10

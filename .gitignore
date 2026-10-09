@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Large binary files - never commit
 *.apk
 *.zip
@@ -15,6 +16,8 @@
 # Logs
 *.log
 *.logcat.txt
+*.pcap
+*.pcapng
 
 # Emulator/Android artifacts
 *.avd
@@ -51,3 +54,31 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Analysis captures
+private-captures/
+private-apps/
+
+# vSeeBox investigation directories
+vseebox/
+
+# Remote Control MCP connections
+MCP_CONNECTIONS/
+MCP_CONNECTIONS-main.zip
+
+# GitHub MCP server
+mcp-vs-skills-plan.md
+mcp__apktool-mcp-server__*.zip
+mcp__jadx-headless__*.zip
+
+# Other tools
+pyghidra_mcp_projects/
+pcsx2-agent/
+=======
+private-captures/
+__pycache__/
+*.pcap
+*.pcapng
+.venv/
+private-apps/
+>>>>>>> 8ef061353b4ecb54db6cef2535fe270c74b8bfe8

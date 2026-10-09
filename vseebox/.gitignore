@@ -1,0 +1,5 @@
+private-captures/
+__pycache__/
+*.pcap
+*.pcapng
+.venv/
