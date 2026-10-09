@@ -1,0 +1,3 @@
+=== BoxTools Permissions ===
+Command failed: adb shell pm list permissions | grep -i boxtools
+

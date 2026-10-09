@@ -1,0 +1,3 @@
+=== BoxTools Service List ===
+Command failed: adb shell service list | grep -i boxtools
+

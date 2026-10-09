@@ -1,0 +1,3 @@
+=== BoxTools System Config ===
+Command failed: adb shell ls -la /system/etc/ | grep -i boxtools
+

@@ -1,0 +1,3 @@
+=== BoxTools Package Dump ===
+Command failed: adb shell pm dump com.qstar.apps.boxtools
+

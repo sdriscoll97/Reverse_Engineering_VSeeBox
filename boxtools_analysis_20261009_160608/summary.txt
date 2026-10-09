@@ -1,0 +1,5 @@
+Analysis Time: Fri Oct  9 04:06:08 PM CDT 2026
+BoxTools Package: com.qstar.apps.boxtools
+System UID: Unknown
+Shared User ID: android.uid.system
+Key Permissions: INSTALL_PACKAGES, DELETE_PACKAGES, WRITE_SECURE_SETTINGS

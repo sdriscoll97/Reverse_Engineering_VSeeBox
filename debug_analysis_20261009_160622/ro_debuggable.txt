@@ -1,0 +1,3 @@
+=== ro.debuggable Property ===
+Command failed: adb shell getprop | grep ro.debuggable
+

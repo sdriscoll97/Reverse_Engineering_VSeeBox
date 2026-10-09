@@ -1,0 +1,3 @@
+=== Network Connections ===
+Command failed: adb shell netstat -tulnp
+

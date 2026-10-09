@@ -1,0 +1,3 @@
+=== ADB Services ===
+Command failed: adb shell service list | grep -i adb
+

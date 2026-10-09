@@ -1,0 +1,3 @@
+=== Local Temporary Directory ===
+Command failed: adb shell ls -la /data/local/tmp/
+

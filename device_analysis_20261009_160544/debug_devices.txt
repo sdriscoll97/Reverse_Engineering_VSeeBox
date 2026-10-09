@@ -1,0 +1,3 @@
+=== Debug Devices ===
+Command failed: adb shell ls -la /dev/ | grep debug
+

@@ -1,0 +1,3 @@
+=== Build Fingerprint ===
+Command failed: adb shell getprop ro.build.fingerprint
+

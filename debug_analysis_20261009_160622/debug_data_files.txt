@@ -1,0 +1,3 @@
+=== Debug Data Files ===
+Command failed: adb shell find /data -name '*debug*' 2>/dev/null
+

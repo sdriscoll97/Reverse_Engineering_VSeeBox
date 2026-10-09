@@ -1,0 +1,3 @@
+=== BoxTools Dumpsys ===
+Command failed: adb shell dumpsys package com.qstar.apps.boxtools
+

@@ -1,0 +1,3 @@
+=== Debuggable Status ===
+Command failed: adb shell getprop ro.debuggable
+

@@ -1,0 +1,3 @@
+=== Running Debug Processes ===
+Command failed: adb shell ps | grep -i debug
+

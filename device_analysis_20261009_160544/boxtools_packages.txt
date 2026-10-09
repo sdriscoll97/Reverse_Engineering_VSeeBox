@@ -1,0 +1,3 @@
+=== BoxTools Packages ===
+Command failed: adb shell pm list packages | grep boxtools
+

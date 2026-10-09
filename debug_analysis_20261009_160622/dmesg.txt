@@ -1,0 +1,3 @@
+=== Kernel Messages (last 50 lines) ===
+Command failed: adb shell dmesg | tail -50
+

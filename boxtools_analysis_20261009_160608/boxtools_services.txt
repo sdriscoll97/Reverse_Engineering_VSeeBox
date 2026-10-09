@@ -1,0 +1,3 @@
+=== BoxTools Services Information ===
+Command failed: adb shell dumpsys activity services | grep -A 10 -B 5 boxtools
+

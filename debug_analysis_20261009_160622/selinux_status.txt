@@ -1,0 +1,3 @@
+=== SELinux Status ===
+Command failed: adb shell getenforce
+

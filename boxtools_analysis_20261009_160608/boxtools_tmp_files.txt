@@ -1,0 +1,3 @@
+=== BoxTools Temp Files ===
+Command failed: adb shell ls -la /data/local/tmp/ | grep -i boxtools
+

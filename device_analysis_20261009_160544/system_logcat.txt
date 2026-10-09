@@ -1,0 +1,3 @@
+=== System Logcat (last 50 lines) ===
+Command failed: adb shell logcat -d -b system | tail -50
+

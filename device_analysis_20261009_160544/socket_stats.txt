@@ -1,0 +1,3 @@
+=== Socket Statistics ===
+Command failed: adb shell cat /proc/net/sockstat
+

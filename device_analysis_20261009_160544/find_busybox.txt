@@ -1,0 +1,3 @@
+=== Finding busybox ===
+Command failed: adb shell find /system -name 'busybox' 2>/dev/null
+

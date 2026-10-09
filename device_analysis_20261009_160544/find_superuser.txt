@@ -1,0 +1,3 @@
+=== Finding superuser ===
+Command failed: adb shell find /system -name 'superuser' 2>/dev/null
+

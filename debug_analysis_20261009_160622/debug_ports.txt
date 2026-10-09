@@ -1,0 +1,3 @@
+=== Debug Ports ===
+Command failed: adb shell netstat -tulnp | grep -i debug
+

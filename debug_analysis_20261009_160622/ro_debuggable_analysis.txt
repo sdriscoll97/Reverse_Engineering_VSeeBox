@@ -1,0 +1,7 @@
+=== ro.debuggable Analysis ===
+Value: Not found
+This indicates debug features are enabled in the build.
+Potential implications:
+- Debug symbols may be present
+- Debug interfaces may be accessible
+- System-level debugging capabilities may exist

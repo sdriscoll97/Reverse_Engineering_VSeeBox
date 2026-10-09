@@ -1,0 +1,3 @@
+=== BoxTools Properties ===
+Command failed: adb shell getprop | grep -i boxtools
+

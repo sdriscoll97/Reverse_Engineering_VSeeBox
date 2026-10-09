@@ -1,0 +1,3 @@
+=== BoxTools Data Directory ===
+Command failed: adb shell ls -la /data/data/com.qstar.apps.boxtools/
+

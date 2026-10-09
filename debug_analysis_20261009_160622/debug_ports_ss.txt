@@ -1,0 +1,3 @@
+=== Debug Ports (ss) ===
+Command failed: adb shell ss -tulnp | grep -i debug
+

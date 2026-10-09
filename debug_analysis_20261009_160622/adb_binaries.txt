@@ -1,0 +1,3 @@
+=== ADB Binaries ===
+Command failed: adb shell find /system -name '*adb*' -type f 2>/dev/null
+

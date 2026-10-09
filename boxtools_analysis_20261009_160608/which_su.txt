@@ -1,0 +1,3 @@
+=== Finding su binary ===
+Command failed: adb shell which su
+

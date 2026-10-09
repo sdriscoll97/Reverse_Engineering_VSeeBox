@@ -1,0 +1,5 @@
+Device IP: 10.42.0.130
+Analysis Time: Fri Oct  9 04:05:46 PM CDT 2026
+System Build: Unknown
+Debuggable: Unknown
+BoxTools Installed: 0

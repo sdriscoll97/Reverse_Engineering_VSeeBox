@@ -1,0 +1,3 @@
+=== Services List ===
+Command failed: adb shell service list
+
