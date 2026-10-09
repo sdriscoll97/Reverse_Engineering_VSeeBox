@@ -1,0 +1,53 @@
+# Large binary files - never commit
+*.apk
+*.zip
+*.7z
+*.exe
+*.bin
+*.img
+*.iso
+
+# APK signing artifacts
+*.idsig
+*.keystore
+*.jks
+
+# Logs
+*.log
+*.logcat.txt
+
+# Emulator/Android artifacts
+*.avd
+*.lock
+*.tmp
+
+# Decrypted APKs (large)
+decompiled_apks/
+heatlive_apks/
+
+# VSeeBox firmware dump (large)
+VSeeBox_Files/
+
+# Downloaded archives
+EmuDeck_2.3.8_BIOS_Pack.zip
+github-mcp-server_Windows_x86_64.zip
+PortableGit-2.56.0-64-bit.7z.exe
+Wireshark-4.7.3-x64.exe
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
