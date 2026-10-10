@@ -4,8 +4,8 @@
 - **Target**: VSeeBox Android TV box (model: oppen_wv4)
 - **OS**: Android 14 (SDK 34)
 - **Build**: UD2A.240505.001.W1
-- **IP Address**: 10.42.0.130
-- **Status**: Reachable but not currently root-accessible
+- **IP Address**: `192.168.1.163` / `192.168.1.167` (home network, same switch as the Optiplex; MAC `b4:5b:d6:b1:8d:36`). Historical addresses: `10.42.0.130`, then `192.168.50.130`.
+- **Status**: Reachable on the network; not yet root-accessible — ADB-over-TCP (5555/5037) is closed until USB/network debugging is enabled on the device. See `vseebox/NETWORK_STATUS.md`.
 
 ## Key Findings
 

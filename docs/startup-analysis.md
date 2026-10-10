@@ -1,5 +1,7 @@
 # Heat Live 818 startup capture analysis
 
+> **Network note (2026-10-09).** The VSeeBox has moved to the home network and is now at `192.168.1.163` / `192.168.1.167` (MAC `b4:5b:d6:b1:8d:36`), reachable from the Optiplex over the same switch. For **new** captures use the current address — confirm it first with `python3 vseebox/scripts/ping_vseebox.py`. The `--target 192.168.50.130` in the commands below is intentional: they re-analyze a **historical** pcap recorded 2026-09-23 on the old `192.168.50.0/24` network, so that target must be kept. See `vseebox/NETWORK_STATUS.md`.
+
 This report supersedes the pending-access status in `startup-observation.md`. The user observed Heat Live reopening directly to channel 818, with a clear picture after approximately 6–7 seconds. The app-open timestamp was not measured, so that delay cannot be precisely aligned with the packet timeline.
 
 ## Evidence integrity

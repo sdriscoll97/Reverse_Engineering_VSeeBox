@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Large binary files - never commit
 *.apk
 *.zip
@@ -74,11 +73,4 @@ mcp__jadx-headless__*.zip
 # Other tools
 pyghidra_mcp_projects/
 pcsx2-agent/
-=======
-private-captures/
-__pycache__/
-*.pcap
-*.pcapng
-.venv/
-private-apps/
->>>>>>> 8ef061353b4ecb54db6cef2535fe270c74b8bfe8
+token.txt

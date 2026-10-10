@@ -1,5 +1,7 @@
 # Heat Live channel 818 — first playback observation
 
+> **Network note (2026-10-09).** The VSeeBox has moved to the home network and is now at `192.168.1.163` / `192.168.1.167` (MAC `b4:5b:d6:b1:8d:36`), reachable from the Optiplex over the same switch. For **new** captures use the current address — confirm it first with `python3 vseebox/scripts/ping_vseebox.py`. The `--target 192.168.50.130` in the reproduce command below is intentional: it re-analyzes a **historical** pcap recorded 2026-09-23 on the old `192.168.50.0/24` network, so that target must be kept. See `vseebox/NETWORK_STATUS.md`.
+
 The user reports smooth playback on channel 818 in Heat Live. The box had been disconnected and reconnected before recording. Its observed Ethernet neighbor address remained unchanged. App attribution is based on the user's observation; no process-to-socket mapping was collected.
 
 ## Evidence

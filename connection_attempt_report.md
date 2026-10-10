@@ -1,11 +1,14 @@
 # Connection Attempt Report - VSeeBox Device
 
-## Device Status
-- **IP Address**: 10.42.0.130
-- **Reachable**: Yes (ping works)
-- **ADB Status**: Cannot establish connection due to device conflicts
-- **USB Status**: Device not detected in lsusb output
-- **Network Services**: Unknown (no port scans successful)
+> **SUPERSEDED — updated 2026-10-09.** The device has changed networks several times. It is now on the home network at `192.168.1.163` / `192.168.1.167` (MAC `b4:5b:d6:b1:8d:36`), reachable from the Optiplex (`192.168.1.168`) over the same switch. ADB-over-TCP (5555/5037) is still closed. See `vseebox/NETWORK_STATUS.md` for the authoritative current setup. The report below reflects earlier attempts against the old `10.42.0.130` address and is retained for history.
+
+## Device Status (current, 2026-10-09)
+- **IP Address**: `192.168.1.163` / `192.168.1.167` (home network, same switch as Optiplex)
+- **MAC**: `b4:5b:d6:b1:8d:36` (matches the device MAC recorded in `findings.md`)
+- **Reachable**: Yes (ping works, 0% loss)
+- **ADB Status**: Not enabled — TCP ports 5555/5037 closed until USB/network debugging is enabled in the device's Developer Options
+- **USB Status**: USB debugging not yet enabled on device
+- **Network Services**: BoxTools AIDL + Deviceheartbeat MQTT known from static analysis; no ADB service listening
 
 ## Connection Attempts Made
 

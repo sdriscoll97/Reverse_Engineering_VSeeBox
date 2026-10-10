@@ -1,5 +1,7 @@
 # Heat Live playback versus home-screen idle
 
+> **Network note (2026-10-09).** The VSeeBox has moved to the home network and is now at `192.168.1.163` / `192.168.1.167` (MAC `b4:5b:d6:b1:8d:36`), reachable from the Optiplex over the same switch. For **new** captures use the current address — confirm it first with `python3 vseebox/scripts/ping_vseebox.py`. The `--target 192.168.50.130` in the reproduce commands below is intentional: those re-analyze **historical** pcap files recorded 2026-09-23 on the old `192.168.50.0/24` network, so that target must be kept. See `vseebox/NETWORK_STATUS.md`.
+
 ## Result
 
 Traffic fell by 99.984721% between the channel 818 playback capture and the later home-screen capture. None of the 26 playback endpoint groups carrying more than 1 MB appeared in the idle capture. This strongly associates the high-volume traffic with the playback state. Peer-assisted delivery remains a hypothesis, not an identified protocol.
@@ -51,6 +53,7 @@ The comparison was executed successfully on both actual captures. The earlier si
 Start a 180-second capture while still at the home screen. After about 15 seconds, open Heat Live and select channel 818, then leave it playing until capture completion. Record the actual app-open and first-picture times. This should include new connection setup and any visible startup discovery traffic missing from the steady-playback capture.
 
 ```bash
-sudo python3 /home/sean/vseebox/scripts/capture.py --interface enp2s0 --target 192.168.50.130 --seconds 180 --label heat-live-818-startup
+# Confirm the box's current address first: python3 vseebox/scripts/ping_vseebox.py
+sudo python3 /home/sean/vseebox/scripts/capture.py --interface enp2s0 --target 192.168.1.167 --seconds 180 --label heat-live-818-startup
 sudo chown -R sean:sean /home/sean/vseebox/private-captures
 ```
